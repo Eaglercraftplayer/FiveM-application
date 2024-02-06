@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveM Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blue Ocean RP</h1>
+    </header>
+
+    <main>
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>FiveM Application</title>
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f2f2f2;
+              }
+
+              header {
+                  background-color: #333;
+                  color: #fff;
+                  padding: 10px;
+                  text-align: center;
+              }
+
+              main {
+                  max-width: 800px;
+                  margin: 20px auto;
+                  padding: 20px;
+                  background-color: #fff;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              }
+
+              form {
+                  display: flex;
+                  flex-direction: column;
+              }
+
+              label {
+                  margin-bottom: 8px;
+              }
+
+              input {
+                  padding: 8px;
+                  margin-bottom: 16px;
+              }
+
+              button {
+                  padding: 10px 20px;
+                  font-size: 16px;
+                  cursor: pointer;
+              }
+
+              #result {
+                  margin-top: 20px;
+              }
+          </style>
+      </head>
+      <body>
+          <header>
+              <h1>FiveM Application</h1>
+          </header>
+
+          <main>
+              <form id="myForm">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" required>
+
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" required>
+
+                  <button type="button" onclick="submitForm()">Submit</button>
+              </form>
+
+              <div id="result"></div>
+          </main>
+
+          <script>
+              function submitForm() {
+                  // Get values from form
+                  var name = document.getElementById('name').value;
+                  var age = document.getElementById('age').value;
+
+                  // Display result
+                  var resultElement = document.getElementById('result');
+                  resultElement.innerHTML = 'Application submitted!<br>';
+                  resultElement.innerHTML += 'Name: ' + name + '<br>';
+                  resultElement.innerHTML += 'Age: ' + age;
+              }
+          </script>
+      </body>
+      </html>
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Application Acceptance System</title>
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f2f2f2;
+              }
+
+              header {
+                  background-color: #333;
+                  color: #fff;
+                  padding: 10px;
+                  text-align: center;
+              }
+
+              main {
+                  max-width: 800px;
+                  margin: 20px auto;
+                  padding: 20px;
+                  background-color: #fff;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              }
+
+              form {
+                  display: flex;
+                  flex-direction: column;
+              }
+
+              label {
+                  margin-bottom: 8px;
+              }
+
+              input {
+                  padding: 8px;
+                  margin-bottom: 16px;
+              }
+
+              button {
+                  padding: 10px 20px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  margin-right: 10px;
+              }
+
+              #result {
+                  margin-top: 20px;
+              }
+
+              .accepted {
+                  color: #008000;
+              }
+          </style>
+      </head>
+      <body>
+          <header>
+              <h1>Application Acceptance System</h1>
+          </header>
+
+          <main>
+              <form id="myForm">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" required>
+
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" required>
+
+                  <button type="button" onclick="acceptApplication()">Accept</button>
+              </form>
+
+              <div id="result"></div>
+          </main>
+
+          <script>
+              function acceptApplication() {
+                  // Get values from form
+                  var name = document.getElementById('name').value;
+                  var age = document.getElementById('age').value;
+
+                  // Display result with accepted status
+                  var resultElement = document.getElementById('result');
+                  resultElement.innerHTML = 'Application accepted!<br>';
+                  resultElement.innerHTML += 'Name: ' + name + '<br>';
+                  resultElement.innerHTML += 'Age: ' + age;
+                  resultElement.className = 'accepted';
+              }
+          </script>
+      </body>
+      </html>
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Application Denial System</title>
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f2f2f2;
+              }
+
+              header {
+                  background-color: #333;
+                  color: #fff;
+                  padding: 10px;
+                  text-align: center;
+              }
+
+              main {
+                  max-width: 800px;
+                  margin: 20px auto;
+                  padding: 20px;
+                  background-color: #fff;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              }
+
+              form {
+                  display: flex;
+                  flex-direction: column;
+              }
+
+              label {
+                  margin-bottom: 8px;
+              }
+
+              input {
+                  padding: 8px;
+                  margin-bottom: 16px;
+              }
+
+              button {
+                  padding: 10px 20px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  margin-right: 10px;
+              }
+
+              #result {
+                  margin-top: 20px;
+              }
+
+              .denied {
+                  color: #ff0000;
+              }
+          </style>
+      </head>
+      <body>
+          <header>
+              <h1>Application Denial System</h1>
+          </header>
+
+          <main>
+              <form id="myForm">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" required>
+
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" required>
+
+                  <button type="button" onclick="denyApplication()">Deny</button>
+              </form>
+
+              <div id="result"></div>
+          </main>
+
+          <script>
+              function denyApplication() {
+                  // Get values from form
+                  var name = document.getElementById('name').value;
+                  var age = document.getElementById('age').value;
+
+                  // Display result with denied status
+                  var resultElement = document.getElementById('result');
+                  resultElement.innerHTML = 'Application denied!<br>';
+                  resultElement.innerHTML += 'Name: ' + name + '<br>';
+                  resultElement.innerHTML += 'Age: ' + age;
+                  resultElement.className = 'denied';
+              }
+          </script>
+      </body>
+      </html>
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Application Pending System</title>
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f2f2f2;
+              }
+
+              header {
+                  background-color: #333;
+                  color: #fff;
+                  padding: 10px;
+                  text-align: center;
+              }
+
+              main {
+                  max-width: 800px;
+                  margin: 20px auto;
+                  padding: 20px;
+                  background-color: #fff;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              }
+
+              form {
+                  display: flex;
+                  flex-direction: column;
+              }
+
+              label {
+                  margin-bottom: 8px;
+              }
+
+              input {
+                  padding: 8px;
+                  margin-bottom: 16px;
+              }
+
+              button {
+                  padding: 10px 20px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  margin-right: 10px;
+              }
+
+              #result {
+                  margin-top: 20px;
+              }
+
+              .pending {
+                  color: #ff8c00;
+              }
+          </style>
+      </head>
+      <body>
+          <header>
+              <h1>Application Pending System</h1>
+          </header>
+
+          <main>
+              <form id="myForm">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" required>
+
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" required>
+
+                  <button type="button" onclick="markApplicationPending()">Mark as Pending</button>
+              </form>
+
+              <div id="result"></div>
+          </main>
+
+          <script>
+              function markApplicationPending() {
+                  // Get values from form
+                  var name = document.getElementById('name').value;
+                  var age = document.getElementById('age').value;
+
+                  // Display result with pending status
+                  var resultElement = document.getElementById('result');
+                  resultElement.innerHTML = 'Application marked as pending!<br>';
+                  resultElement.innerHTML += 'Name: ' + name + '<br>';
+                  resultElement.innerHTML += 'Age: ' + age;
+                  resultElement.className = 'pending';
+              }
+          </script>
+      </body>
+      </html>
